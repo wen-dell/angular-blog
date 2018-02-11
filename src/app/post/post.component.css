@@ -1,3 +1,9 @@
 div.post-message {
     text-align: justify;
 }
+
+img.post-image {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}

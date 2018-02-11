@@ -1,17 +1,27 @@
 <div class="post-container">
-    <h5>{{ post?.title }}</h5>
-    Tags:  
-    <div class="chip" *ngFor="let tag of post?.tags">
-      {{ tag }}
-    </div>
-    <p>
-      <small>Posted on {{ post?.datePost | date }}</small>
-    </p>
-    <p>Author: {{ post?.author }}</p>
-    <div class="post-message">
-      <p>
-        {{ post?.message }}
-      </p>
-      <p>{{ post?.comments.length }} comments <i class="material-icons comment">comment</i></p>
-    </div>
+  <h5>{{ post?.title }}</h5>
+  Tags:
+  <div class="chip" *ngFor="let tag of post?.tags">
+    {{ tag }}
   </div>
+  <p>
+    <small>Posted on {{ post?.datePost | date }}</small>
+  </p>
+  <img class="post-image" src="{{post?.image}}">
+  <p>Author: {{ post?.author }}</p>
+  <div class="post-message">
+    <p>
+      {{ post?.message }}
+    </p>
+    <p>{{ post?.comments.length }} comments
+      <i class="material-icons comment">comment</i>
+    </p>
+
+    <div class="card" *ngFor="let comment of post?.comments">
+      <div class="card-content">
+        <p>{{ comment }}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
