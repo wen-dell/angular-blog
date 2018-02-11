@@ -9,6 +9,7 @@ import { AppRoutingModule } from 'app/app.routing.module';
 import { HomeService } from 'app/home/home.service';
 import { PostComponent } from './post/post.component';
 import { PluralPipe } from './plural.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PluralPipe } from './plural.pipe';
     HomeComponent,
     AboutComponent,
     PostComponent,
-    PluralPipe
+    PluralPipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
