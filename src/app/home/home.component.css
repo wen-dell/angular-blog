@@ -7,6 +7,8 @@ div.post-container {
 
 div.post-message a {
     text-decoration: underline;
+    cursor: pointer;
+    color: #e8ae00;
 }
 
 div.post-container .comment {
