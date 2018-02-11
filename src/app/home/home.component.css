@@ -1,0 +1,10 @@
+div.post-container {
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 8px 0;
+}
+
+div.post-message a {
+    text-decoration: underline;
+}
