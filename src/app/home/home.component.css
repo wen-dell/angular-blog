@@ -8,3 +8,7 @@ div.post-container {
 div.post-message a {
     text-decoration: underline;
 }
+
+div.post-container .comment {
+    color: #3535fa;
+}

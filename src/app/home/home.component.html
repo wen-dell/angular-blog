@@ -10,9 +10,9 @@
   <p>Author: {{ post.author }}</p>
   <div class="post-message">
     <p>
-      {{ post.message }}
+      {{ post.message | slice:0:100 }}
       <a>Read more...</a>
     </p>
-    <p>{{ post.comments.length }} comments <i class="material-icons">comment</i></p>
+    <p>{{ post.comments.length }} comments <i class="material-icons comment">comment</i></p>
   </div>
 </div>
