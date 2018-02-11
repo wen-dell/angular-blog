@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { HomeService } from 'app/home/home.service';
+import { Post } from '../post';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  private posts: Post[];
+
+  constructor(private homeService: HomeService) { }
 
   ngOnInit() {
+    this.posts = this.homeService.getPosts();
   }
 
 }
