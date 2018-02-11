@@ -5,6 +5,7 @@ export const posts: Post[] = [
         id: 1,
         title: 'First post here',
         tags: ['About me', 'Latin'],
+        image: 'https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg',
         datePost: new Date(10, 2, 2017),
         author: 'Wendell Alves',
         message: `
@@ -23,6 +24,7 @@ export const posts: Post[] = [
         id: 2,
         title: 'Hey there, I\'m back!',
         tags: ['Latin', 'Tutorial'],
+        image: 'https://cdn.pixabay.com/photo/2016/02/19/11/19/computer-1209641_960_720.jpg',
         datePost: new Date(10, 4, 2017),
         author: 'Wendell Alves',
         message: `

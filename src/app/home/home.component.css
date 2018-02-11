@@ -14,3 +14,9 @@ div.post-message a {
 div.post-container .comment {
     color: #3535fa;
 }
+
+img.post-image {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
