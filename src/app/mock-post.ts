@@ -6,7 +6,7 @@ export const posts: Post[] = [
         title: 'First post here',
         tags: ['About me', 'Latin'],
         image: 'https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg',
-        datePost: new Date(10, 2, 2017),
+        datePost: new Date('10-2-2017'),
         author: 'Wendell Alves',
         message: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -25,7 +25,7 @@ export const posts: Post[] = [
         title: 'Hey there, I\'m back!',
         tags: ['Latin', 'Tutorial'],
         image: 'https://cdn.pixabay.com/photo/2016/02/19/11/19/computer-1209641_960_720.jpg',
-        datePost: new Date(10, 4, 2017),
+        datePost: new Date('10-2-2017'),
         author: 'Wendell Alves',
         message: `
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,

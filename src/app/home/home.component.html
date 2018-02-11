@@ -14,6 +14,6 @@
       {{ post.message | slice:0:100 }}
       <a [routerLink]="['/post',  post.id]">Read more...</a>
     </p>
-    <p>{{ post.comments.length }} comments <i class="material-icons comment">comment</i></p>
+    <p>{{ post.comments.length | plural:"comment" }}<i class="material-icons comment">comment</i></p>
   </div>
 </div>

@@ -13,7 +13,7 @@
     <p>
       {{ post?.message }}
     </p>
-    <p>{{ post?.comments.length }} comments
+    <p>{{ post.comments.length | plural:"comment" }}
       <i class="material-icons comment">comment</i>
     </p>
 

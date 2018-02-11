@@ -8,13 +8,15 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'app/app.routing.module';
 import { HomeService } from 'app/home/home.service';
 import { PostComponent } from './post/post.component';
+import { PluralPipe } from './plural.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    PostComponent
+    PostComponent,
+    PluralPipe
   ],
   imports: [
     BrowserModule,
