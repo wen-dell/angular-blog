@@ -1,5 +1,5 @@
 <div class="post-container" *ngFor="let post of posts">
-  <h5>{{ post.title }}</h5>
+  <h5 class="post-title" [routerLink]="['/post',  post.id]">{{ post.title }}</h5>
   Tags:  
   <div class="chip" *ngFor="let tag of post.tags">
     {{ tag }}
@@ -7,7 +7,7 @@
   <p>
     <small>Posted on {{ post.datePost | date }}</small>
   </p>
-  <img class="post-image" src="{{post.image}}">
+  <img class="post-image" [routerLink]="['/post',  post.id]" src="{{post.image}}">
   <p>Author: {{ post.author }}</p>
   <div class="post-message">
     <p>

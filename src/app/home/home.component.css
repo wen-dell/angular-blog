@@ -20,3 +20,12 @@ img.post-image {
     height: 500px;
     margin: 0 auto;
 }
+
+img.post-image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+h5.post-title {
+    cursor: pointer;
+}
